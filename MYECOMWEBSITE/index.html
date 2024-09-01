@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My ECOM WEB</title>
+
+    <link
+      rel="shortcut icon"
+      href="/MYECOMWEBSITE/images/logo/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="overlay" data-overlay></div>
+
+    <!--
+      - MODAL
+    -->
+
+    <div class="modal" data-modal>
+      <div class="modal-close-overlay" data-modal-overlay></div>
+
+      <div class="modal-content">
+        <button class="modal-close-btn" data-modal-close>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="newsletter-img">
+          <img
+            src="./assets/images/newsletter.png"
+            alt="subscribe newsletter"
+            width="400"
+            height="400"
+          />
+        </div>
+
+        <div class="newsletter">
+          <form action="#">
+            <div class="newsletter-header">
+              <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+              <p class="newsletter-desc">
+                Subscribe the <span class="br-name"><b>SAB HAI</b> </span> to get latest products and discount
+                update.
+              </p>
+            </div>
+
+            <input
+              type="email"
+              name="email"
+              class="email-field"
+              placeholder="Email Address"
+              required
+            />
+
+            <button type="submit" class="btn-newsletter">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+<!-- NOTIFACTION -->
+
+    <div class="notification-toast" closed data-toast>
+
+        <button class="toast-close-btn" data-toast-close>
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="toast-banner">
+            <img src="/MYECOMWEBSITE/images/products/jewellery-1.jpg" alt="jewellery photo" width="80" height="70">
+
+        </div>
+
+        <div class="toast-detail">
+            <p class="toast-message">
+                Someone just bought
+            </p>
+            <p toast-title>
+                Rose Gold Earing
+            </p>
+            <p class="toast-meta">
+                <time datetime="PTM2">2 Minutes </time> Ago</time>
+            </p>
+
+
+        </div>
+
+    </div>
+    <!--
+      - HEADER
+    -->
+
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <ul></ul>.header-socail-container
+            </div>
+        </div>
+    </header>
+
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
